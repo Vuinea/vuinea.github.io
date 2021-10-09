@@ -110,3 +110,18 @@ a:visited {
   width: 30%;
   scroll-behavior: smooth;
 }
+
+.learn-more {
+  height: 30px;
+  background: lightcyan;
+  border: solid 0.3px lightgray;
+  border-radius: 9%;
+  transition-property: all;
+  transition-duration: 150ms;
+}
+
+.learn-more:hover {
+  background: rgb(181, 219, 219);
+  border: solid 1px black;
+  cursor: pointer;
+}
