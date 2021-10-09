@@ -1,0 +1,112 @@
+body {
+  background: lightblue;
+  color: rgb(29, 29, 29);
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(110, 108, 108);
+}
+
+.title-break {
+  display: block;
+}
+
+.top-bar {
+  height: 100px;
+  background: #f1f1e5;
+}
+
+.top-bar > .top-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.top-nav > a {
+  font-size: 25px;
+  margin: 20px 20px auto 20px;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 150ms;
+}
+
+.top-nav > a:hover {
+  text-decoration: none;
+  color: rgb(199, 193, 193);
+}
+
+#main {
+  margin-top: 10px;
+}
+
+#info-text {
+  display: inline;
+  margin-left: 20px;
+}
+
+.text {
+  font-size: 30px;
+  overflow-wrap: break-word;
+}
+
+#main-image-holder {
+  float: left;
+  margin-right: 20px;
+}
+
+#main-visual {
+  height: 500px;
+  font-style: bold;
+}
+
+/* about cody page */
+
+#cody-objects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#cody-arms {
+  margin-bottom: 100px;
+}
+
+#cody-tree {
+  margin-left: 300px;
+}
+
+/* credits */
+
+#credits {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+#table-of-contents {
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+.credit-link {
+  font-size: 25px;
+}
+
+.credit-text {
+  margin: 0px auto 350px auto;
+  width: 30%;
+  scroll-behavior: smooth;
+}
