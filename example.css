@@ -1,6 +1,7 @@
 body {
   background: lightblue;
   color: rgb(29, 29, 29);
+  margin: 0px;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -9,113 +10,72 @@ h1 {
   font-family: "Roboto", sans-serif;
 }
 
-a {
-  color: rgb(128, 128, 128);
-  text-decoration: none;
-}
-
-a:visited {
-  color: rgb(110, 108, 108);
-}
-
-.title-break {
-  display: block;
-}
-
 .top-bar {
+  background: whitesmoke;
   height: 100px;
-  background: #f1f1e5;
 }
 
-.top-bar > .top-nav {
+.top-nav {
+  font-size: 25px;
+  /* flexbox */
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
 .top-nav > a {
-  font-size: 25px;
   margin: 20px 20px auto 20px;
-  text-decoration: none;
   transition-property: color;
   transition-duration: 150ms;
 }
 
 .top-nav > a:hover {
-  text-decoration: none;
-  color: rgb(199, 193, 193);
+  color: rgb(102, 102, 102);
 }
 
-#main {
-  margin-top: 10px;
-}
 
-#info-text {
+#main-info {
   display: inline;
-  margin-left: 20px;
+}
+
+#main-visual {
+  float: left;
+  margin: 10px 30px 0px 20px;
 }
 
 .text {
   font-size: 30px;
   overflow-wrap: break-word;
-}
-
-#main-image-holder {
-  float: left;
   margin-right: 20px;
 }
 
-#main-visual {
-  height: 500px;
-  font-style: bold;
+a {
+  color: rgb(128, 128, 128);
+  text-decoration: none;
 }
 
-/* about cody page */
+/* start credits */
 
-#cody-objects {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-#cody-arms {
-  margin-bottom: 100px;
-}
-
-#cody-tree {
-  margin-left: 300px;
-}
-
-/* credits */
-
-#credits {
-  margin-left: auto;
-  margin-right: auto;
+#main-credits {
   text-align: center;
-  scroll-behavior: smooth;
 }
 
-#table-of-contents {
-  display: flex;
-  flex-direction: column;
-  scroll-behavior: smooth;
-}
-
-.credit-link {
+#table-of-contents, .toc-text {
   font-size: 25px;
+  margin-right: 30px;
+  margin-bottom: 50px;
 }
 
 .credit-text {
-  margin: 0px auto 350px auto;
   width: 30%;
-  scroll-behavior: smooth;
+  margin: 0px auto 350px auto;
 }
 
 .learn-more {
   height: 30px;
   background: lightcyan;
   border: solid 0.3px lightgray;
-  border-radius: 9%;
+  border-radius: 10%;
   transition-property: all;
   transition-duration: 150ms;
 }
@@ -124,4 +84,10 @@ a:visited {
   background: rgb(181, 219, 219);
   border: solid 1px black;
   cursor: pointer;
+}
+
+/* cody */
+#cody-arms {
+  margin-right: 500px;
+  margin-left: 30px;
 }
